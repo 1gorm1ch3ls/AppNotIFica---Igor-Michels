@@ -17,6 +17,10 @@
 		05CEDC782A37415600FC316C /* AppNotIFica___Igor_MichelsTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05CEDC772A37415600FC316C /* AppNotIFica___Igor_MichelsTests.swift */; };
 		05CEDC822A37415600FC316C /* AppNotIFica___Igor_MichelsUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05CEDC812A37415600FC316C /* AppNotIFica___Igor_MichelsUITests.swift */; };
 		05CEDC842A37415600FC316C /* AppNotIFica___Igor_MichelsUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05CEDC832A37415600FC316C /* AppNotIFica___Igor_MichelsUITestsLaunchTests.swift */; };
+		05CEDC942A374C8700FC316C /* Coordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05CEDC932A374C8700FC316C /* Coordinator.swift */; };
+		05CEDC962A374CDA00FC316C /* LoginCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05CEDC952A374CDA00FC316C /* LoginCoordinator.swift */; };
+		05CEDC992A374D9200FC316C /* LoginView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05CEDC982A374D9200FC316C /* LoginView.swift */; };
+		05CEDC9B2A374DB100FC316C /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05CEDC9A2A374DB100FC316C /* LoginViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -51,6 +55,10 @@
 		05CEDC7D2A37415600FC316C /* AppNotIFica - Igor MichelsUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "AppNotIFica - Igor MichelsUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		05CEDC812A37415600FC316C /* AppNotIFica___Igor_MichelsUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "AppNotIFica___Igor_MichelsUITests.swift"; sourceTree = "<group>"; };
 		05CEDC832A37415600FC316C /* AppNotIFica___Igor_MichelsUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "AppNotIFica___Igor_MichelsUITestsLaunchTests.swift"; sourceTree = "<group>"; };
+		05CEDC932A374C8700FC316C /* Coordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Coordinator.swift; sourceTree = "<group>"; };
+		05CEDC952A374CDA00FC316C /* LoginCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginCoordinator.swift; sourceTree = "<group>"; };
+		05CEDC982A374D9200FC316C /* LoginView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginView.swift; sourceTree = "<group>"; };
+		05CEDC9A2A374DB100FC316C /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -101,14 +109,10 @@
 		05CEDC5C2A37415200FC316C /* AppNotIFica - Igor Michels */ = {
 			isa = PBXGroup;
 			children = (
-				05CEDC5D2A37415200FC316C /* AppDelegate.swift */,
-				05CEDC5F2A37415200FC316C /* SceneDelegate.swift */,
-				05CEDC612A37415200FC316C /* ViewController.swift */,
-				05CEDC632A37415200FC316C /* Main.storyboard */,
-				05CEDC692A37415500FC316C /* Assets.xcassets */,
-				05CEDC6B2A37415500FC316C /* LaunchScreen.storyboard */,
+				05CEDC972A374D6800FC316C /* Controller */,
+				05CEDC922A374C5C00FC316C /* Coordinator */,
+				05CEDC902A3749EF00FC316C /* Resource */,
 				05CEDC6E2A37415500FC316C /* Info.plist */,
-				05CEDC662A37415200FC316C /* AppNotIFica___Igor_Michels.xcdatamodeld */,
 			);
 			path = "AppNotIFica - Igor Michels";
 			sourceTree = "<group>";
@@ -128,6 +132,38 @@
 				05CEDC832A37415600FC316C /* AppNotIFica___Igor_MichelsUITestsLaunchTests.swift */,
 			);
 			path = "AppNotIFica - Igor MichelsUITests";
+			sourceTree = "<group>";
+		};
+		05CEDC902A3749EF00FC316C /* Resource */ = {
+			isa = PBXGroup;
+			children = (
+				05CEDC662A37415200FC316C /* AppNotIFica___Igor_Michels.xcdatamodeld */,
+				05CEDC5D2A37415200FC316C /* AppDelegate.swift */,
+				05CEDC5F2A37415200FC316C /* SceneDelegate.swift */,
+				05CEDC612A37415200FC316C /* ViewController.swift */,
+				05CEDC632A37415200FC316C /* Main.storyboard */,
+				05CEDC692A37415500FC316C /* Assets.xcassets */,
+				05CEDC6B2A37415500FC316C /* LaunchScreen.storyboard */,
+			);
+			path = Resource;
+			sourceTree = "<group>";
+		};
+		05CEDC922A374C5C00FC316C /* Coordinator */ = {
+			isa = PBXGroup;
+			children = (
+				05CEDC932A374C8700FC316C /* Coordinator.swift */,
+				05CEDC952A374CDA00FC316C /* LoginCoordinator.swift */,
+			);
+			path = Coordinator;
+			sourceTree = "<group>";
+		};
+		05CEDC972A374D6800FC316C /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				05CEDC982A374D9200FC316C /* LoginView.swift */,
+				05CEDC9A2A374DB100FC316C /* LoginViewController.swift */,
+			);
+			path = Controller;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -261,8 +297,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				05CEDC962A374CDA00FC316C /* LoginCoordinator.swift in Sources */,
+				05CEDC992A374D9200FC316C /* LoginView.swift in Sources */,
 				05CEDC622A37415200FC316C /* ViewController.swift in Sources */,
 				05CEDC5E2A37415200FC316C /* AppDelegate.swift in Sources */,
+				05CEDC9B2A374DB100FC316C /* LoginViewController.swift in Sources */,
+				05CEDC942A374C8700FC316C /* Coordinator.swift in Sources */,
 				05CEDC602A37415200FC316C /* SceneDelegate.swift in Sources */,
 				05CEDC682A37415200FC316C /* AppNotIFica___Igor_Michels.xcdatamodeld in Sources */,
 			);
