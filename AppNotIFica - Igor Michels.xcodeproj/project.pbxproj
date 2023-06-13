@@ -21,6 +21,11 @@
 		05CEDC962A374CDA00FC316C /* LoginCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05CEDC952A374CDA00FC316C /* LoginCoordinator.swift */; };
 		05CEDC992A374D9200FC316C /* LoginView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05CEDC982A374D9200FC316C /* LoginView.swift */; };
 		05CEDC9B2A374DB100FC316C /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05CEDC9A2A374DB100FC316C /* LoginViewController.swift */; };
+		05CEDC9F2A375BB200FC316C /* UIColor+.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05CEDC9E2A375BB200FC316C /* UIColor+.swift */; };
+		05CEDCA22A3890CB00FC316C /* ImageDefault.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05CEDCA12A3890CB00FC316C /* ImageDefault.swift */; };
+		05CEDCA42A3890EA00FC316C /* ButtonDefault.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05CEDCA32A3890EA00FC316C /* ButtonDefault.swift */; };
+		05CEDCA62A38911F00FC316C /* LabelDefault.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05CEDCA52A38911F00FC316C /* LabelDefault.swift */; };
+		05CEDCA82A38912E00FC316C /* TextFieldDefault.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05CEDCA72A38912E00FC316C /* TextFieldDefault.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -59,6 +64,11 @@
 		05CEDC952A374CDA00FC316C /* LoginCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginCoordinator.swift; sourceTree = "<group>"; };
 		05CEDC982A374D9200FC316C /* LoginView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginView.swift; sourceTree = "<group>"; };
 		05CEDC9A2A374DB100FC316C /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
+		05CEDC9E2A375BB200FC316C /* UIColor+.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIColor+.swift"; sourceTree = "<group>"; };
+		05CEDCA12A3890CB00FC316C /* ImageDefault.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageDefault.swift; sourceTree = "<group>"; };
+		05CEDCA32A3890EA00FC316C /* ButtonDefault.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ButtonDefault.swift; sourceTree = "<group>"; };
+		05CEDCA52A38911F00FC316C /* LabelDefault.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LabelDefault.swift; sourceTree = "<group>"; };
+		05CEDCA72A38912E00FC316C /* TextFieldDefault.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TextFieldDefault.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -109,8 +119,7 @@
 		05CEDC5C2A37415200FC316C /* AppNotIFica - Igor Michels */ = {
 			isa = PBXGroup;
 			children = (
-				05CEDC972A374D6800FC316C /* Controller */,
-				05CEDC922A374C5C00FC316C /* Coordinator */,
+				05CEDC9C2A375B7C00FC316C /* Source */,
 				05CEDC902A3749EF00FC316C /* Resource */,
 				05CEDC6E2A37415500FC316C /* Info.plist */,
 			);
@@ -164,6 +173,36 @@
 				05CEDC9A2A374DB100FC316C /* LoginViewController.swift */,
 			);
 			path = Controller;
+			sourceTree = "<group>";
+		};
+		05CEDC9C2A375B7C00FC316C /* Source */ = {
+			isa = PBXGroup;
+			children = (
+				05CEDCA02A3890AB00FC316C /* Infrastructure */,
+				05CEDC922A374C5C00FC316C /* Coordinator */,
+				05CEDC972A374D6800FC316C /* Controller */,
+				05CEDC9D2A375B8200FC316C /* Extension */,
+			);
+			path = Source;
+			sourceTree = "<group>";
+		};
+		05CEDC9D2A375B8200FC316C /* Extension */ = {
+			isa = PBXGroup;
+			children = (
+				05CEDC9E2A375BB200FC316C /* UIColor+.swift */,
+			);
+			path = Extension;
+			sourceTree = "<group>";
+		};
+		05CEDCA02A3890AB00FC316C /* Infrastructure */ = {
+			isa = PBXGroup;
+			children = (
+				05CEDCA12A3890CB00FC316C /* ImageDefault.swift */,
+				05CEDCA32A3890EA00FC316C /* ButtonDefault.swift */,
+				05CEDCA52A38911F00FC316C /* LabelDefault.swift */,
+				05CEDCA72A38912E00FC316C /* TextFieldDefault.swift */,
+			);
+			path = Infrastructure;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -298,13 +337,18 @@
 			buildActionMask = 2147483647;
 			files = (
 				05CEDC962A374CDA00FC316C /* LoginCoordinator.swift in Sources */,
+				05CEDCA22A3890CB00FC316C /* ImageDefault.swift in Sources */,
+				05CEDCA62A38911F00FC316C /* LabelDefault.swift in Sources */,
+				05CEDCA82A38912E00FC316C /* TextFieldDefault.swift in Sources */,
 				05CEDC992A374D9200FC316C /* LoginView.swift in Sources */,
+				05CEDCA42A3890EA00FC316C /* ButtonDefault.swift in Sources */,
 				05CEDC622A37415200FC316C /* ViewController.swift in Sources */,
 				05CEDC5E2A37415200FC316C /* AppDelegate.swift in Sources */,
 				05CEDC9B2A374DB100FC316C /* LoginViewController.swift in Sources */,
 				05CEDC942A374C8700FC316C /* Coordinator.swift in Sources */,
 				05CEDC602A37415200FC316C /* SceneDelegate.swift in Sources */,
 				05CEDC682A37415200FC316C /* AppNotIFica___Igor_Michels.xcdatamodeld in Sources */,
+				05CEDC9F2A375BB200FC316C /* UIColor+.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

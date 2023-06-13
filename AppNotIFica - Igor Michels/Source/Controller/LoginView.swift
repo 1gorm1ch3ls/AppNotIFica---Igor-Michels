@@ -12,66 +12,21 @@ class LoginView: UIView{
     
     override init(frame: CGRect){
         super.init(frame: frame)
-        self.backgroundColor = .white
+        self.backgroundColor = .viewBackGroundColor
         setupVisualElements()
     }
     
-    var imageLogin: UIImageView = {
-        let imagem = UIImageView()
-        imagem.image = UIImage(named: "ImagemLogin")
-        imagem.contentMode = .scaleAspectFit
-        imagem.translatesAutoresizingMaskIntoConstraints = false
-        
-        return imagem
-    }()
+    var imageLogin = ImageDefault(image: "ImagemLogin")
     
-    var imageLabel: UILabel = {
-        let label = UILabel()
-        label.textColor = UIColor(red: 0.541, green: 0.541, blue: 0.557, alpha: 1)
-        label.font = UIFont(name: "SFProDisplay-Light", size: 16)
-        label.text = "Registre e gerencie as ocorrências do seu IF"
-        label.translatesAutoresizingMaskIntoConstraints = false
-        
-        return label
-    }()
+    var imageLabel = LabelDefault(text: "Registre e gerencie as ocorrências do seu IF") 
     
-    var email: UITextField = {
-        let textField = UITextField()
-        textField.layer.backgroundColor = UIColor(red: 1, green: 1, blue: 1, alpha: 1).cgColor
-        textField.placeholder = "E-mail"
-        textField.translatesAutoresizingMaskIntoConstraints = false
-        
-        return textField
-    }()
+    var email = textFieldDefault(text: "E-mail")
     
-    var senha: UITextField = {
-        let textField = UITextField()
-        textField.layer.backgroundColor = UIColor(red: 1, green: 1, blue: 1, alpha: 1).cgColor
-        textField.placeholder = "Senha"
-        textField.translatesAutoresizingMaskIntoConstraints = false
-        
-        return textField
-    }()
+    var senha = textFieldDefault(text: "Senha" )
     
-    var logar: UIButton = {
-        let botao = UIButton()
-        botao.setTitle("LOGAR", for: .normal)
-        botao.layer.backgroundColor = UIColor(red: 0.369, green: 0.639, blue: 0.639, alpha: 1).cgColor
-        botao.layer.cornerRadius = 14
-        botao.translatesAutoresizingMaskIntoConstraints = false
-        
-        return botao
-    }()
+    var logar = ButtonDefault(text: "LOGAR")
     
-    var registrar: UIButton = {
-        let botao = UIButton()
-        botao.setTitle("REGISTRAR", for: .normal)
-        botao.layer.backgroundColor = UIColor(red: 0.369, green: 0.639, blue: 0.639, alpha: 1).cgColor
-        botao.layer.cornerRadius = 14
-        botao.translatesAutoresizingMaskIntoConstraints = false
-        
-        return botao
-    }()
+    var registrar = ButtonDefault(text: "REGISTRAR")
     
     func setupVisualElements(){
         
