@@ -26,6 +26,9 @@
 		05CEDCA42A3890EA00FC316C /* ButtonDefault.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05CEDCA32A3890EA00FC316C /* ButtonDefault.swift */; };
 		05CEDCA62A38911F00FC316C /* LabelDefault.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05CEDCA52A38911F00FC316C /* LabelDefault.swift */; };
 		05CEDCA82A38912E00FC316C /* TextFieldDefault.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05CEDCA72A38912E00FC316C /* TextFieldDefault.swift */; };
+		05CEDCAC2A389E3000FC316C /* RegisterView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05CEDCAB2A389E3000FC316C /* RegisterView.swift */; };
+		05CEDCAE2A389E6200FC316C /* RegisterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05CEDCAD2A389E6200FC316C /* RegisterViewController.swift */; };
+		05CEDCB02A389E8500FC316C /* RegisterCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05CEDCAF2A389E8500FC316C /* RegisterCoordinator.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -69,6 +72,9 @@
 		05CEDCA32A3890EA00FC316C /* ButtonDefault.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ButtonDefault.swift; sourceTree = "<group>"; };
 		05CEDCA52A38911F00FC316C /* LabelDefault.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LabelDefault.swift; sourceTree = "<group>"; };
 		05CEDCA72A38912E00FC316C /* TextFieldDefault.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TextFieldDefault.swift; sourceTree = "<group>"; };
+		05CEDCAB2A389E3000FC316C /* RegisterView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterView.swift; sourceTree = "<group>"; };
+		05CEDCAD2A389E6200FC316C /* RegisterViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterViewController.swift; sourceTree = "<group>"; };
+		05CEDCAF2A389E8500FC316C /* RegisterCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterCoordinator.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -162,6 +168,7 @@
 			children = (
 				05CEDC932A374C8700FC316C /* Coordinator.swift */,
 				05CEDC952A374CDA00FC316C /* LoginCoordinator.swift */,
+				05CEDCAF2A389E8500FC316C /* RegisterCoordinator.swift */,
 			);
 			path = Coordinator;
 			sourceTree = "<group>";
@@ -169,8 +176,8 @@
 		05CEDC972A374D6800FC316C /* Controller */ = {
 			isa = PBXGroup;
 			children = (
-				05CEDC982A374D9200FC316C /* LoginView.swift */,
-				05CEDC9A2A374DB100FC316C /* LoginViewController.swift */,
+				05CEDCAA2A389DED00FC316C /* Register */,
+				05CEDCA92A389DAF00FC316C /* Login */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -203,6 +210,24 @@
 				05CEDCA72A38912E00FC316C /* TextFieldDefault.swift */,
 			);
 			path = Infrastructure;
+			sourceTree = "<group>";
+		};
+		05CEDCA92A389DAF00FC316C /* Login */ = {
+			isa = PBXGroup;
+			children = (
+				05CEDC982A374D9200FC316C /* LoginView.swift */,
+				05CEDC9A2A374DB100FC316C /* LoginViewController.swift */,
+			);
+			path = Login;
+			sourceTree = "<group>";
+		};
+		05CEDCAA2A389DED00FC316C /* Register */ = {
+			isa = PBXGroup;
+			children = (
+				05CEDCAB2A389E3000FC316C /* RegisterView.swift */,
+				05CEDCAD2A389E6200FC316C /* RegisterViewController.swift */,
+			);
+			path = Register;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -339,14 +364,17 @@
 				05CEDC962A374CDA00FC316C /* LoginCoordinator.swift in Sources */,
 				05CEDCA22A3890CB00FC316C /* ImageDefault.swift in Sources */,
 				05CEDCA62A38911F00FC316C /* LabelDefault.swift in Sources */,
+				05CEDCAC2A389E3000FC316C /* RegisterView.swift in Sources */,
 				05CEDCA82A38912E00FC316C /* TextFieldDefault.swift in Sources */,
 				05CEDC992A374D9200FC316C /* LoginView.swift in Sources */,
+				05CEDCAE2A389E6200FC316C /* RegisterViewController.swift in Sources */,
 				05CEDCA42A3890EA00FC316C /* ButtonDefault.swift in Sources */,
 				05CEDC622A37415200FC316C /* ViewController.swift in Sources */,
 				05CEDC5E2A37415200FC316C /* AppDelegate.swift in Sources */,
 				05CEDC9B2A374DB100FC316C /* LoginViewController.swift in Sources */,
 				05CEDC942A374C8700FC316C /* Coordinator.swift in Sources */,
 				05CEDC602A37415200FC316C /* SceneDelegate.swift in Sources */,
+				05CEDCB02A389E8500FC316C /* RegisterCoordinator.swift in Sources */,
 				05CEDC682A37415200FC316C /* AppNotIFica___Igor_Michels.xcdatamodeld in Sources */,
 				05CEDC9F2A375BB200FC316C /* UIColor+.swift in Sources */,
 			);

@@ -1,14 +1,14 @@
 //
-//  LoginView.swift
+//  RegisterView.swift
 //  AppNotIFica - Igor Michels
 //
-//  Created by IFBIOTIC06 on 12/06/23.
+//  Created by IFBIOTIC06 on 13/06/23.
 //
 
 import Foundation
 import UIKit
 
-class LoginView: UIView{
+class RegisterView: UIView{
     
     override init(frame: CGRect){
         super.init(frame: frame)
@@ -16,38 +16,32 @@ class LoginView: UIView{
         setupVisualElements()
     }
     
-    var imageLogin = ImageDefault(image: "ImagemLogin")
+    var imageLabel = LabelDefault(text: "Entre com seu e-mail e senha para se registrar", font: UIFont.systemFont(ofSize: 17, weight: .regular))
     
-    var imageLabel = LabelDefault(text: "Registre e gerencie as ocorrências do seu IF") 
+    var email = textFieldDefault(placeholder: "E-mail")
     
-    var email = textFieldDefault(text: "E-mail")
+    var senha = textFieldDefault(placeholder: "Senha" )
     
-    var senha = textFieldDefault(text: "Senha" )
-    
-    var logar = ButtonDefault(text: "LOGAR")
+    var confirmarSenha = textFieldDefault(placeholder: "Confirmar senha" )
     
     var registrar = ButtonDefault(text: "REGISTRAR")
     
+    var logar = ButtonDefault(text: "LOGAR")
+    
     func setupVisualElements(){
         
-        self.addSubview(imageLogin)
         self.addSubview(imageLabel)
         self.addSubview(email)
         self.addSubview(senha)
-        self.addSubview(logar)
+        self.addSubview(confirmarSenha)
         self.addSubview(registrar)
+        self.addSubview(logar)
         
         
         NSLayoutConstraint.activate([
             
-            imageLogin.widthAnchor.constraint(equalToConstant: 274.99),
-            imageLogin.heightAnchor.constraint(equalToConstant: 82.64),
-            imageLogin.topAnchor.constraint(equalTo: self.topAnchor, constant:228),
-            imageLogin.leadingAnchor.constraint(equalTo:self.leadingAnchor, constant: 57),
-            imageLogin.trailingAnchor.constraint(equalTo: self.trailingAnchor, constant: -57),
-            
             imageLabel.widthAnchor.constraint(equalToConstant: 100),
-            imageLabel.topAnchor.constraint(equalTo: imageLogin.bottomAnchor, constant: 5),
+            imageLabel.topAnchor.constraint(equalTo: self.topAnchor, constant: 200),
             imageLabel.leadingAnchor.constraint(equalTo:self.leadingAnchor, constant: 25),
             imageLabel.trailingAnchor.constraint(equalTo: self.trailingAnchor, constant: -10),
             
@@ -63,17 +57,23 @@ class LoginView: UIView{
             senha.leadingAnchor.constraint(equalTo:self.leadingAnchor, constant: 16),
             senha.trailingAnchor.constraint(equalTo: self.trailingAnchor, constant: -16),
             
-            logar.widthAnchor.constraint(equalToConstant: 374),
-            logar.heightAnchor.constraint(equalToConstant: 60),
-            logar.topAnchor.constraint(equalTo: senha.bottomAnchor, constant: 23),
-            logar.leadingAnchor.constraint(equalTo: self.leadingAnchor, constant: 16),
-            logar.trailingAnchor.constraint(equalTo: self.trailingAnchor, constant: -16),
+            confirmarSenha.widthAnchor.constraint(equalToConstant: 374),
+            confirmarSenha.heightAnchor.constraint(equalToConstant: 60),
+            confirmarSenha.topAnchor.constraint(equalTo: senha.bottomAnchor, constant: 23),
+            confirmarSenha.leadingAnchor.constraint(equalTo:self.leadingAnchor, constant: 16),
+            confirmarSenha.trailingAnchor.constraint(equalTo: self.trailingAnchor, constant: -16),
             
             registrar.widthAnchor.constraint(equalToConstant: 374),
             registrar.heightAnchor.constraint(equalToConstant: 60),
-            registrar.topAnchor.constraint(equalTo: logar.bottomAnchor, constant: 23),
+            registrar.topAnchor.constraint(equalTo: confirmarSenha.bottomAnchor, constant: 23),
             registrar.leadingAnchor.constraint(equalTo: self.leadingAnchor, constant: 16),
             registrar.trailingAnchor.constraint(equalTo: self.trailingAnchor, constant: -16),
+            
+            logar.widthAnchor.constraint(equalToConstant: 374),
+            logar.heightAnchor.constraint(equalToConstant: 60),
+            logar.topAnchor.constraint(equalTo: registrar.bottomAnchor, constant: 23),
+            logar.leadingAnchor.constraint(equalTo: self.leadingAnchor, constant: 16),
+            logar.trailingAnchor.constraint(equalTo: self.trailingAnchor, constant: -16),
                 
         ])
     }
