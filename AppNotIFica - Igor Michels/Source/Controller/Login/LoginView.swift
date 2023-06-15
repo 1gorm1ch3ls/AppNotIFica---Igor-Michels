@@ -26,7 +26,7 @@ class LoginView: UIView{
     
     var senha = textFieldDefault(placeholder: "Senha" )
     
-    var logar = ButtonDefault(text: "LOGAR")
+    var logar = ButtonDefault(text: "ENTRAR")
     
     var registrar = ButtonDefault(text: "REGISTRAR")
     

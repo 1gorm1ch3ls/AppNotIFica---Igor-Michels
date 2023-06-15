@@ -26,7 +26,7 @@ class RegisterView: UIView{
     
     var registrar = ButtonDefault(text: "REGISTRAR")
     
-    var logar = ButtonDefault(text: "LOGAR")
+    var logar = ButtonDefault(text: "ENTRAR")
     
     func setupVisualElements(){
         
