@@ -16,6 +16,8 @@ class LoginView: UIView{
         setupVisualElements()
     }
     
+    var onRegisterTap: (() -> Void)?
+    
     var imageLogin = ImageDefault(image: "ImagemLogin")
     
     var imageLabel = LabelDefault(text: "Registre e gerencie as ocorrências do seu IF", font: UIFont.systemFont(ofSize: 17, weight: .regular))
@@ -37,6 +39,7 @@ class LoginView: UIView{
         self.addSubview(logar)
         self.addSubview(registrar)
         
+        registrar.addTarget(self, action: #selector(registerTap), for: .touchUpInside)
         
         NSLayoutConstraint.activate([
             
@@ -80,6 +83,11 @@ class LoginView: UIView{
     
     required init?(coder: NSCoder) {
         fatalError("init(coder:) has not been implemented")
+    }
+    
+    @objc
+    private func registerTap(){
+        onRegisterTap?()
     }
     
 }
