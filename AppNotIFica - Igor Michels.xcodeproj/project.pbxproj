@@ -29,6 +29,10 @@
 		05CEDCAC2A389E3000FC316C /* RegisterView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05CEDCAB2A389E3000FC316C /* RegisterView.swift */; };
 		05CEDCAE2A389E6200FC316C /* RegisterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05CEDCAD2A389E6200FC316C /* RegisterViewController.swift */; };
 		05CEDCB02A389E8500FC316C /* RegisterCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05CEDCAF2A389E8500FC316C /* RegisterCoordinator.swift */; };
+		05CEDCB32A3B530B00FC316C /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05CEDCB22A3B530B00FC316C /* HomeView.swift */; };
+		05CEDCB52A3B532200FC316C /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05CEDCB42A3B532200FC316C /* HomeViewController.swift */; };
+		05CEDCB72A3B538F00FC316C /* HomeCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05CEDCB62A3B538F00FC316C /* HomeCoordinator.swift */; };
+		05CEDCB92A3B5C4000FC316C /* ViewControllerDefault.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05CEDCB82A3B5C4000FC316C /* ViewControllerDefault.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -75,6 +79,10 @@
 		05CEDCAB2A389E3000FC316C /* RegisterView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterView.swift; sourceTree = "<group>"; };
 		05CEDCAD2A389E6200FC316C /* RegisterViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterViewController.swift; sourceTree = "<group>"; };
 		05CEDCAF2A389E8500FC316C /* RegisterCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterCoordinator.swift; sourceTree = "<group>"; };
+		05CEDCB22A3B530B00FC316C /* HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
+		05CEDCB42A3B532200FC316C /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
+		05CEDCB62A3B538F00FC316C /* HomeCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeCoordinator.swift; sourceTree = "<group>"; };
+		05CEDCB82A3B5C4000FC316C /* ViewControllerDefault.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewControllerDefault.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -169,6 +177,7 @@
 				05CEDC932A374C8700FC316C /* Coordinator.swift */,
 				05CEDC952A374CDA00FC316C /* LoginCoordinator.swift */,
 				05CEDCAF2A389E8500FC316C /* RegisterCoordinator.swift */,
+				05CEDCB62A3B538F00FC316C /* HomeCoordinator.swift */,
 			);
 			path = Coordinator;
 			sourceTree = "<group>";
@@ -176,6 +185,7 @@
 		05CEDC972A374D6800FC316C /* Controller */ = {
 			isa = PBXGroup;
 			children = (
+				05CEDCB12A3B52F500FC316C /* Home */,
 				05CEDCAA2A389DED00FC316C /* Register */,
 				05CEDCA92A389DAF00FC316C /* Login */,
 			);
@@ -208,6 +218,7 @@
 				05CEDCA32A3890EA00FC316C /* ButtonDefault.swift */,
 				05CEDCA52A38911F00FC316C /* LabelDefault.swift */,
 				05CEDCA72A38912E00FC316C /* TextFieldDefault.swift */,
+				05CEDCB82A3B5C4000FC316C /* ViewControllerDefault.swift */,
 			);
 			path = Infrastructure;
 			sourceTree = "<group>";
@@ -228,6 +239,15 @@
 				05CEDCAD2A389E6200FC316C /* RegisterViewController.swift */,
 			);
 			path = Register;
+			sourceTree = "<group>";
+		};
+		05CEDCB12A3B52F500FC316C /* Home */ = {
+			isa = PBXGroup;
+			children = (
+				05CEDCB22A3B530B00FC316C /* HomeView.swift */,
+				05CEDCB42A3B532200FC316C /* HomeViewController.swift */,
+			);
+			path = Home;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -363,9 +383,11 @@
 			files = (
 				05CEDC962A374CDA00FC316C /* LoginCoordinator.swift in Sources */,
 				05CEDCA22A3890CB00FC316C /* ImageDefault.swift in Sources */,
+				05CEDCB92A3B5C4000FC316C /* ViewControllerDefault.swift in Sources */,
 				05CEDCA62A38911F00FC316C /* LabelDefault.swift in Sources */,
 				05CEDCAC2A389E3000FC316C /* RegisterView.swift in Sources */,
 				05CEDCA82A38912E00FC316C /* TextFieldDefault.swift in Sources */,
+				05CEDCB52A3B532200FC316C /* HomeViewController.swift in Sources */,
 				05CEDC992A374D9200FC316C /* LoginView.swift in Sources */,
 				05CEDCAE2A389E6200FC316C /* RegisterViewController.swift in Sources */,
 				05CEDCA42A3890EA00FC316C /* ButtonDefault.swift in Sources */,
@@ -375,8 +397,10 @@
 				05CEDC942A374C8700FC316C /* Coordinator.swift in Sources */,
 				05CEDC602A37415200FC316C /* SceneDelegate.swift in Sources */,
 				05CEDCB02A389E8500FC316C /* RegisterCoordinator.swift in Sources */,
+				05CEDCB32A3B530B00FC316C /* HomeView.swift in Sources */,
 				05CEDC682A37415200FC316C /* AppNotIFica___Igor_Michels.xcdatamodeld in Sources */,
 				05CEDC9F2A375BB200FC316C /* UIColor+.swift in Sources */,
+				05CEDCB72A3B538F00FC316C /* HomeCoordinator.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
