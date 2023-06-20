@@ -8,13 +8,7 @@
 import Foundation
 import UIKit
 
-class LoginView: UIView{
-    
-    override init(frame: CGRect){
-        super.init(frame: frame)
-        self.backgroundColor = .viewBackGroundColor
-        setupVisualElements()
-    }
+class LoginView: ViewDefault{
     
     var onRegisterTap: (() -> Void)?
     var onLoginTap: (() -> Void)?
@@ -23,16 +17,24 @@ class LoginView: UIView{
     
     var imageLabel = LabelDefault(text: "Registre e gerencie as ocorrências do seu IF", font: UIFont.systemFont(ofSize: 17, weight: .regular))
     
-    var email = textFieldDefault(placeholder: "E-mail")
+    var email = textFieldDefault(placeholder: "E-mail", keyBoardType: .emailAddress, returnKeyType: .next)
     
-    var senha = textFieldDefault(placeholder: "Senha" )
+    var senha: textFieldDefault = {
+        let text = textFieldDefault(placeholder: "Senha", keyBoardType: .emailAddress, returnKeyType: .done)
+        text.isSecureTextEntry = true
+        
+        return text
+    }()
     
     var logar = ButtonDefault(text: "ENTRAR")
     
     var registrar = ButtonDefault(text: "REGISTRAR")
     
-    func setupVisualElements(){
+    override func setupVisualElements(){
         
+        email.delegate = self
+        senha.delegate = self
+        super.setupVisualElements()
         self.addSubview(imageLogin)
         self.addSubview(imageLabel)
         self.addSubview(email)
@@ -79,12 +81,8 @@ class LoginView: UIView{
             registrar.topAnchor.constraint(equalTo: logar.bottomAnchor, constant: 23),
             registrar.leadingAnchor.constraint(equalTo: self.leadingAnchor, constant: 16),
             registrar.trailingAnchor.constraint(equalTo: self.trailingAnchor, constant: -16),
-                
+            
         ])
-    }
-    
-    required init?(coder: NSCoder) {
-        fatalError("init(coder:) has not been implemented")
     }
     
     @objc
@@ -95,6 +93,21 @@ class LoginView: UIView{
     @objc
     private func loginTap(){
         onLoginTap?()
+    }
+    
+}
+
+extension LoginView: UITextFieldDelegate{
+    
+    func textFieldShouldReturn(_ textField: UITextField) -> Bool{
+        
+        if textField == email{
+            self.senha.becomeFirstResponder()
+        }else{
+            textField.resignFirstResponder()
+        }
+        
+        return true
     }
     
 }

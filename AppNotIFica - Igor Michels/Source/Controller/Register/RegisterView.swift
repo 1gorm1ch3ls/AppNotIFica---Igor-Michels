@@ -8,30 +8,38 @@
 import Foundation
 import UIKit
 
-class RegisterView: UIView{
-    
-    override init(frame: CGRect){
-        super.init(frame: frame)
-        self.backgroundColor = .viewBackGroundColor
-        setupVisualElements()
-    }
+class RegisterView: ViewDefault{
     
     var onLoginTap: (() -> Void)?
     
     var imageLabel = LabelDefault(text: "Entre com seu e-mail e senha para se registrar", font: UIFont.systemFont(ofSize: 17, weight: .regular))
     
-    var email = textFieldDefault(placeholder: "E-mail")
+    var email = textFieldDefault(placeholder: "E-mail" , keyBoardType: .emailAddress, returnKeyType: .next)
     
-    var senha = textFieldDefault(placeholder: "Senha" )
+    var senha: textFieldDefault = {
+        let text = textFieldDefault(placeholder: "Senha", keyBoardType: .emailAddress, returnKeyType: .next)
+        text.isSecureTextEntry = true
+        
+        return text
+    }()
     
-    var confirmarSenha = textFieldDefault(placeholder: "Confirmar senha" )
+    var confirmarSenha: textFieldDefault = {
+        let text = textFieldDefault(placeholder: "Confirmar Senha", keyBoardType: .emailAddress, returnKeyType: .done)
+        text.isSecureTextEntry = true
+        
+        return text
+    }()
     
     var registrar = ButtonDefault(text: "REGISTRAR")
     
     var logar = ButtonDefault(text: "ENTRAR")
     
-    func setupVisualElements(){
+    override  func setupVisualElements(){
         
+        email.delegate = self
+        senha.delegate = self
+        confirmarSenha.delegate = self
+        super.setupVisualElements()
         self.addSubview(imageLabel)
         self.addSubview(email)
         self.addSubview(senha)
@@ -81,13 +89,25 @@ class RegisterView: UIView{
         ])
     }
     
-    required init?(coder: NSCoder) {
-        fatalError("init(coder:) has not been implemented")
-    }
-    
     @objc
     private func loginTap(){
         onLoginTap?()
     }
     
+}
+
+extension RegisterView: UITextFieldDelegate{
+    
+    func textFieldShouldReturn(_ textField: UITextField) -> Bool{
+        
+        if textField == email{
+            self.senha.becomeFirstResponder()
+        }else if textField == senha{
+            self.confirmarSenha.becomeFirstResponder()
+        }else{
+            textField.resignFirstResponder()
+        }
+        
+        return true
+    }
 }

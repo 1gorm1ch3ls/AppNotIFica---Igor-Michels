@@ -33,6 +33,7 @@
 		05CEDCB52A3B532200FC316C /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05CEDCB42A3B532200FC316C /* HomeViewController.swift */; };
 		05CEDCB72A3B538F00FC316C /* HomeCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05CEDCB62A3B538F00FC316C /* HomeCoordinator.swift */; };
 		05CEDCB92A3B5C4000FC316C /* ViewControllerDefault.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05CEDCB82A3B5C4000FC316C /* ViewControllerDefault.swift */; };
+		05CEDCBB2A41CAA300FC316C /* ViewDefault.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05CEDCBA2A41CAA300FC316C /* ViewDefault.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -83,6 +84,7 @@
 		05CEDCB42A3B532200FC316C /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
 		05CEDCB62A3B538F00FC316C /* HomeCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeCoordinator.swift; sourceTree = "<group>"; };
 		05CEDCB82A3B5C4000FC316C /* ViewControllerDefault.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewControllerDefault.swift; sourceTree = "<group>"; };
+		05CEDCBA2A41CAA300FC316C /* ViewDefault.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewDefault.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -219,6 +221,7 @@
 				05CEDCA52A38911F00FC316C /* LabelDefault.swift */,
 				05CEDCA72A38912E00FC316C /* TextFieldDefault.swift */,
 				05CEDCB82A3B5C4000FC316C /* ViewControllerDefault.swift */,
+				05CEDCBA2A41CAA300FC316C /* ViewDefault.swift */,
 			);
 			path = Infrastructure;
 			sourceTree = "<group>";
@@ -392,6 +395,7 @@
 				05CEDCAE2A389E6200FC316C /* RegisterViewController.swift in Sources */,
 				05CEDCA42A3890EA00FC316C /* ButtonDefault.swift in Sources */,
 				05CEDC622A37415200FC316C /* ViewController.swift in Sources */,
+				05CEDCBB2A41CAA300FC316C /* ViewDefault.swift in Sources */,
 				05CEDC5E2A37415200FC316C /* AppDelegate.swift in Sources */,
 				05CEDC9B2A374DB100FC316C /* LoginViewController.swift in Sources */,
 				05CEDC942A374C8700FC316C /* Coordinator.swift in Sources */,
