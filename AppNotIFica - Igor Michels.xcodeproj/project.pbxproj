@@ -34,6 +34,14 @@
 		05CEDCB72A3B538F00FC316C /* HomeCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05CEDCB62A3B538F00FC316C /* HomeCoordinator.swift */; };
 		05CEDCB92A3B5C4000FC316C /* ViewControllerDefault.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05CEDCB82A3B5C4000FC316C /* ViewControllerDefault.swift */; };
 		05CEDCBB2A41CAA300FC316C /* ViewDefault.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05CEDCBA2A41CAA300FC316C /* ViewDefault.swift */; };
+		05CEDCC02A447A3900FC316C /* TabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05CEDCBF2A447A3800FC316C /* TabBarController.swift */; };
+		05CEDCC22A447A7000FC316C /* SobreView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05CEDCC12A447A7000FC316C /* SobreView.swift */; };
+		05CEDCC42A447A8F00FC316C /* NovaOcorrenciaView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05CEDCC32A447A8F00FC316C /* NovaOcorrenciaView.swift */; };
+		05CEDCC62A447AB100FC316C /* NovaOcorrenciaViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05CEDCC52A447AB100FC316C /* NovaOcorrenciaViewController.swift */; };
+		05CEDCC82A447ACA00FC316C /* SobreViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05CEDCC72A447ACA00FC316C /* SobreViewController.swift */; };
+		05CEDCCA2A447AF100FC316C /* SobreCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05CEDCC92A447AF100FC316C /* SobreCoordinator.swift */; };
+		05CEDCCC2A447B0C00FC316C /* TabBarCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05CEDCCB2A447B0C00FC316C /* TabBarCoordinator.swift */; };
+		05CEDCCE2A447B2D00FC316C /* NovaOcorrenciaCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05CEDCCD2A447B2D00FC316C /* NovaOcorrenciaCoordinator.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -85,6 +93,14 @@
 		05CEDCB62A3B538F00FC316C /* HomeCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeCoordinator.swift; sourceTree = "<group>"; };
 		05CEDCB82A3B5C4000FC316C /* ViewControllerDefault.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewControllerDefault.swift; sourceTree = "<group>"; };
 		05CEDCBA2A41CAA300FC316C /* ViewDefault.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewDefault.swift; sourceTree = "<group>"; };
+		05CEDCBF2A447A3800FC316C /* TabBarController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBarController.swift; sourceTree = "<group>"; };
+		05CEDCC12A447A7000FC316C /* SobreView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SobreView.swift; sourceTree = "<group>"; };
+		05CEDCC32A447A8F00FC316C /* NovaOcorrenciaView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NovaOcorrenciaView.swift; sourceTree = "<group>"; };
+		05CEDCC52A447AB100FC316C /* NovaOcorrenciaViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NovaOcorrenciaViewController.swift; sourceTree = "<group>"; };
+		05CEDCC72A447ACA00FC316C /* SobreViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SobreViewController.swift; sourceTree = "<group>"; };
+		05CEDCC92A447AF100FC316C /* SobreCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SobreCoordinator.swift; sourceTree = "<group>"; };
+		05CEDCCB2A447B0C00FC316C /* TabBarCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBarCoordinator.swift; sourceTree = "<group>"; };
+		05CEDCCD2A447B2D00FC316C /* NovaOcorrenciaCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NovaOcorrenciaCoordinator.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -180,6 +196,9 @@
 				05CEDC952A374CDA00FC316C /* LoginCoordinator.swift */,
 				05CEDCAF2A389E8500FC316C /* RegisterCoordinator.swift */,
 				05CEDCB62A3B538F00FC316C /* HomeCoordinator.swift */,
+				05CEDCC92A447AF100FC316C /* SobreCoordinator.swift */,
+				05CEDCCB2A447B0C00FC316C /* TabBarCoordinator.swift */,
+				05CEDCCD2A447B2D00FC316C /* NovaOcorrenciaCoordinator.swift */,
 			);
 			path = Coordinator;
 			sourceTree = "<group>";
@@ -187,6 +206,9 @@
 		05CEDC972A374D6800FC316C /* Controller */ = {
 			isa = PBXGroup;
 			children = (
+				05CEDCBE2A447A1100FC316C /* Sobre */,
+				05CEDCBD2A447A0800FC316C /* TabBar */,
+				05CEDCBC2A4479CC00FC316C /* NovaOcorrencia */,
 				05CEDCB12A3B52F500FC316C /* Home */,
 				05CEDCAA2A389DED00FC316C /* Register */,
 				05CEDCA92A389DAF00FC316C /* Login */,
@@ -251,6 +273,32 @@
 				05CEDCB42A3B532200FC316C /* HomeViewController.swift */,
 			);
 			path = Home;
+			sourceTree = "<group>";
+		};
+		05CEDCBC2A4479CC00FC316C /* NovaOcorrencia */ = {
+			isa = PBXGroup;
+			children = (
+				05CEDCC32A447A8F00FC316C /* NovaOcorrenciaView.swift */,
+				05CEDCC52A447AB100FC316C /* NovaOcorrenciaViewController.swift */,
+			);
+			path = NovaOcorrencia;
+			sourceTree = "<group>";
+		};
+		05CEDCBD2A447A0800FC316C /* TabBar */ = {
+			isa = PBXGroup;
+			children = (
+				05CEDCBF2A447A3800FC316C /* TabBarController.swift */,
+			);
+			path = TabBar;
+			sourceTree = "<group>";
+		};
+		05CEDCBE2A447A1100FC316C /* Sobre */ = {
+			isa = PBXGroup;
+			children = (
+				05CEDCC12A447A7000FC316C /* SobreView.swift */,
+				05CEDCC72A447ACA00FC316C /* SobreViewController.swift */,
+			);
+			path = Sobre;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -384,11 +432,17 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				05CEDCC62A447AB100FC316C /* NovaOcorrenciaViewController.swift in Sources */,
 				05CEDC962A374CDA00FC316C /* LoginCoordinator.swift in Sources */,
 				05CEDCA22A3890CB00FC316C /* ImageDefault.swift in Sources */,
+				05CEDCC22A447A7000FC316C /* SobreView.swift in Sources */,
+				05CEDCC02A447A3900FC316C /* TabBarController.swift in Sources */,
+				05CEDCCA2A447AF100FC316C /* SobreCoordinator.swift in Sources */,
 				05CEDCB92A3B5C4000FC316C /* ViewControllerDefault.swift in Sources */,
 				05CEDCA62A38911F00FC316C /* LabelDefault.swift in Sources */,
 				05CEDCAC2A389E3000FC316C /* RegisterView.swift in Sources */,
+				05CEDCC42A447A8F00FC316C /* NovaOcorrenciaView.swift in Sources */,
+				05CEDCCC2A447B0C00FC316C /* TabBarCoordinator.swift in Sources */,
 				05CEDCA82A38912E00FC316C /* TextFieldDefault.swift in Sources */,
 				05CEDCB52A3B532200FC316C /* HomeViewController.swift in Sources */,
 				05CEDC992A374D9200FC316C /* LoginView.swift in Sources */,
@@ -396,8 +450,10 @@
 				05CEDCA42A3890EA00FC316C /* ButtonDefault.swift in Sources */,
 				05CEDC622A37415200FC316C /* ViewController.swift in Sources */,
 				05CEDCBB2A41CAA300FC316C /* ViewDefault.swift in Sources */,
+				05CEDCCE2A447B2D00FC316C /* NovaOcorrenciaCoordinator.swift in Sources */,
 				05CEDC5E2A37415200FC316C /* AppDelegate.swift in Sources */,
 				05CEDC9B2A374DB100FC316C /* LoginViewController.swift in Sources */,
+				05CEDCC82A447ACA00FC316C /* SobreViewController.swift in Sources */,
 				05CEDC942A374C8700FC316C /* Coordinator.swift in Sources */,
 				05CEDC602A37415200FC316C /* SceneDelegate.swift in Sources */,
 				05CEDCB02A389E8500FC316C /* RegisterCoordinator.swift in Sources */,

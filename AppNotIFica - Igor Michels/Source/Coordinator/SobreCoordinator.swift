@@ -1,22 +1,22 @@
 //
-//  HomeCoordinator.swift
+//  SobreCoordinator.swift
 //  AppNotIFica - Igor Michels
 //
-//  Created by IFBIOTIC06 on 15/06/23.
+//  Created by IFBIOTIC06 on 22/06/23.
 //
 
 import Foundation
 import UIKit
 
-class HomeCoordinator : Coordinator{
+class SobreCoordinator : Coordinator{
     
     private let navigationController: UINavigationController
     
-    lazy var homeViewController: HomeViewController = {
-        let viewController = HomeViewController()
+    lazy var sobreViewController: SobreViewController = {
+        let viewController = SobreViewController()
         
-        viewController.tabBarItem.title = "Home"
-        viewController.tabBarItem.image = UIImage(systemName: "homekit")
+        viewController.tabBarItem.title = "Sobre"
+        viewController.tabBarItem.image = UIImage(systemName: "info.square")
         return viewController
     }()
     
@@ -25,6 +25,5 @@ class HomeCoordinator : Coordinator{
     }
     
     func start() {
-        
     }
 }
