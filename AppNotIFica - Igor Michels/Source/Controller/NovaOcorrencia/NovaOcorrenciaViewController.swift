@@ -23,6 +23,5 @@ class NovaOcorrenciaViewController: ViewControllerDefault{
     override func viewDidLoad() {
         super.viewDidLoad()
         self.title = "Nova Ocorrência"
-        
     }
 }
