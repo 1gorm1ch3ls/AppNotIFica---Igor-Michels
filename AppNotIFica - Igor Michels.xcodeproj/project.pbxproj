@@ -42,6 +42,7 @@
 		05CEDCCA2A447AF100FC316C /* SobreCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05CEDCC92A447AF100FC316C /* SobreCoordinator.swift */; };
 		05CEDCCC2A447B0C00FC316C /* TabBarCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05CEDCCB2A447B0C00FC316C /* TabBarCoordinator.swift */; };
 		05CEDCCE2A447B2D00FC316C /* NovaOcorrenciaCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05CEDCCD2A447B2D00FC316C /* NovaOcorrenciaCoordinator.swift */; };
+		05CEDCD02A49B72600FC316C /* EscolherImagem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05CEDCCF2A49B72600FC316C /* EscolherImagem.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -101,6 +102,7 @@
 		05CEDCC92A447AF100FC316C /* SobreCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SobreCoordinator.swift; sourceTree = "<group>"; };
 		05CEDCCB2A447B0C00FC316C /* TabBarCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBarCoordinator.swift; sourceTree = "<group>"; };
 		05CEDCCD2A447B2D00FC316C /* NovaOcorrenciaCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NovaOcorrenciaCoordinator.swift; sourceTree = "<group>"; };
+		05CEDCCF2A49B72600FC316C /* EscolherImagem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EscolherImagem.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -280,6 +282,7 @@
 			children = (
 				05CEDCC32A447A8F00FC316C /* NovaOcorrenciaView.swift */,
 				05CEDCC52A447AB100FC316C /* NovaOcorrenciaViewController.swift */,
+				05CEDCCF2A49B72600FC316C /* EscolherImagem.swift */,
 			);
 			path = NovaOcorrencia;
 			sourceTree = "<group>";
@@ -438,6 +441,7 @@
 				05CEDCC22A447A7000FC316C /* SobreView.swift in Sources */,
 				05CEDCC02A447A3900FC316C /* TabBarController.swift in Sources */,
 				05CEDCCA2A447AF100FC316C /* SobreCoordinator.swift in Sources */,
+				05CEDCD02A49B72600FC316C /* EscolherImagem.swift in Sources */,
 				05CEDCB92A3B5C4000FC316C /* ViewControllerDefault.swift in Sources */,
 				05CEDCA62A38911F00FC316C /* LabelDefault.swift in Sources */,
 				05CEDCAC2A389E3000FC316C /* RegisterView.swift in Sources */,
